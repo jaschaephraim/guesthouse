@@ -11,9 +11,36 @@ body {
   color: #0d0c02;
 }
 
+#video {
+  clear: both;
+  margin-bottom: 3rem;
+  padding-bottom: 55%;
+  position: relative;
+  height: 0;
+  overflow: hidden;
+}
+
+#video iframe,
+#video object,
+#video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 #title {
-  float: right;
-  margin: 0 0 2rem 3rem;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 1280px) {
+  #title {
+    float: right;
+    margin-left: 2rem;
+  }
 }
 
 #title-image {
@@ -34,4 +61,10 @@ body {
 
 .paragraph {
   margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 1280px) {
+  #text {
+    padding: 0 1rem;
+  }
 }
