@@ -11,6 +11,14 @@ body {
   color: #0d0c02;
 }
 
+a {
+  color: #016fb9;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 #video {
   clear: both;
   margin-bottom: 3rem;
@@ -46,6 +54,10 @@ body {
 #title-image {
   max-width: 30rem;
   height: auto;
+}
+
+#artist-list {
+  text-align: center;
 }
 
 .heading {
